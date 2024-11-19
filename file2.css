@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c7f1eae3; 
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(130, 175, 235, 0.014); /* Semi-transparent white background */
+    border-radius: 12px;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    box-shadow: 0 4px 12px rgba(32, 27, 39, 0.432); /* Subtle shadow for the glass effect */
+    color: #fff; /* Text color should be white for contrast */
+    border: 1px solid rgba(72, 241, 247, 0.945); /* Optional: adds a soft border */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.expense-form {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.expense-table th, .expense-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-table th {
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.expense-table td {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.expense-table .total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: black;
+}
+
+.filter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter label {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: auto;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .expense-table th, .expense-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .expense-table .total-amount {
+        font-size: 1.3rem;
+    }
+
+    .filter select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], select {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .expense-table th, .expense-table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .expense-table .total-amount {
+        font-size: 1.2rem;
+    }
+
+    .filter select {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], select {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .expense-table th, .expense-table td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .expense-table .total-amount {
+        font-size: 1.1rem;
+    }
+
+    .filter select {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+}
